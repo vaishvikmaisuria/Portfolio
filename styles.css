@@ -1,0 +1,27 @@
+/* GLOBAL STYLES */
+body {
+    background: #fff;
+    /* display: flex;
+    justify-content: center; */
+    height:100%;
+}
+
+.typewriter {
+    font-size: 35px;
+}
+
+
+
+.helloButton {
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 1.2rem;
+  padding-right:1.2rem;
+  border-color: #3498db;
+  color:#3498db;
+  background-color: transparent;
+  border-radius: 290486px;
+  height: 2.25em;
+  
+}
