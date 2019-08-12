@@ -7,7 +7,9 @@ body {
 }
 
 .typewriter {
-    font-size: 35px;
+    font-size: 4vw;
+    padding-left: 20px;
+    padding-right:20px
 }
 
 
@@ -24,4 +26,72 @@ body {
   border-radius: 290486px;
   height: 2.25em;
   
+}
+
+/* 
+@media only screen and (max-width: 959px){
+  body{
+    background: #3498db;
+  }  
+
+   
+} */
+
+.expbox {
+  position: relative;
+  display: block;
+  background: #fff;
+  width: 330px;
+  height: 200px;
+  float: left;
+  margin: 35px;
+  z-index: 0;
+  border-radius: 25px;
+}
+
+.icircle {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  background: #fff;
+  border: 10px solid #DB2B39;
+  border-radius: 100%;
+  left: -30px;
+  top: -30px;
+}
+
+.icon {
+  position: absolute;
+  font-size: 54px;
+  left: 15px;
+  top: 10px;
+  z-index: 999;
+}
+
+.icon:hover .rt-icon:before {
+  content: '\25BA';
+  position: absolute;
+  opacity: 1;
+  left: 5px;
+}
+
+.iconboxborder {
+  position: absolute;
+  background: #DB2B39;
+  width: 70%;
+  height: 3px;
+  left: 0px;
+  top: 20px;
+  z-index: -1;
+}
+.infoboxtext {
+    position: absolute;
+    left: 82px;
+    top: 35px;
+    width: 50%;
+}
+.headings {
+    position: absolute;
+    top: -30px;
+    left: 80px;
 }
