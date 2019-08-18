@@ -12,8 +12,10 @@
         <link href="styles.css" rel="stylesheet">
         <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Devicon -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
       
-       
+        <!-- <script src="https://kit.fontawesome.com/5c6404d5e5.js"></script> -->
         <title>My Porfile</title>
     </head>
 
@@ -22,7 +24,7 @@
               
             <div class="navbar navbar-light ">
                 <a class="navbar-header" href="#">
-                    <img src="logo.png" width="50" height="50" class="align-top" alt=""> 
+                    <img src="/img/logo.png" width="50" height="50" class="align-top" alt=""> 
                 </a>
                 <div >       
                     <button class="btn my-2 my-sm-0 helloButton" href="/contact.html">Say Hello</button>
@@ -144,9 +146,10 @@
                 </div>
             </div>
         </section>
+        
+        <section class="section h-105" >
 
-        <section class="section h-100" >
-            <div class="container h-25">
+            <div class="container h-20">
                 <div class="row justify-content-center align-items-center text-center h-25">
                     <div class="col-md-offset-3 col-offset-3 mx-auto " style="padding:10px;" >
                         <h1 class="title-1"> Some things I've made. </h1>
@@ -162,8 +165,8 @@
 
             </div>
 
-            <div class="container h-75">
-                <div class="row portfolio-items isotope h-75" >
+            <div class="container h-75" style="margin-left:80px;">
+                <div class="row portfolio-items isotope h-70" >
                     <!-- <div class="portfolio-item joomla pot col-8 col-sm-4 col-md-3 isotope-item">
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="Residential/c1.jpg" style="width:300px;height:auto;" alt="">
@@ -176,153 +179,335 @@
                         </div>
                     </div> -->
 
-                    <div class="flex mx-auto column col-md-3 col-sm-8 col-8 other">
-                        <div class="cards mx-auto card" style="height: 400px; width: 380px;">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                        <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
-                                <div class="card__media__background"></div>
+                                <img class="card_media_background" src="/img/insurance.png" ></img>
                             </div>
                             <div  class="card__title card__title--primary">
-                                <span  tabindex="0" class="chip blue-grey darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i  aria-hidden="true" class="icon icon--left fab fa-ethereum" style="padding-left: 8px;"></i>
-                                        Ethereum /Web3
+                                <span  tabindex="0" class="chip dark-blue-1 white_text">
+                                    <span class="chip_content">
+                                        <img  aria-hidden="true" class="icon icon--left" src="img/icons8-Ethereum.png" ></img>
+                                        Ethereum/Solidity
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip blue darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i aria-hidden="true" class="icon icon--left devicon devicon-jquery-plain" style="padding-left: 8px;"></i>
-                                        HTML/JavaScript/CSS
+                                <span tabindex="0" class="chip blue white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-html5-plain" ></i>
+                                        HTML/JavaScript
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip blue darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i aria-hidden="true" class="icon icon--left devicon devicon-jquery-plain" style="padding-left: 8px;"></i>
-                                        Solidity
+                                <span tabindex="0" class="chip   white_text">
+                                    <span class="chip_content">
+                                        <img  aria-hidden="true" class="icon icon--left" src="img/icons8-Ethereum.png" ></img>
+                                        Web3
                                     </span>
                                 </span>
                                 <div>
                                     
-                                    <h3  class="headline mb-0">SingleTruth</h3>
+                                    <h3  class="headline ">SingleTruth</h3>
                                     <div>A blockchain based Insurance Form which allows a multiple authorized user to complete the insurance form for a certain customer.</div>
                                 </div>
                             </div>
                             <div  class="card__actions">
-                                <button  type="button" href="https://devpost.com/software/single-truth" class="btn btn--flat theme--dark primary--text">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
                                     <div class="btn__content">
                                         View Source
                                         <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
                                     </div>
                                 </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-md-3 col-sm-8 col-8 other">
-                        <div class="cards mx-auto card" style="height: 400px; width: 380px;">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                        <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
-                                <div class="card__media__background"></div>
+                                <img class="card_media_background" src="/img/QuickHelp.png" ></img>
                             </div>
                             <div  class="card__title card__title--primary">
-                                <span  tabindex="0" class="chip blue-grey darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i  aria-hidden="true" class="icon icon--left fab fa-ethereum" style="padding-left: 8px;"></i>
+                                <span  tabindex="0" class="chip green white_text">
+                                    <span class="chip_content">
+                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
                                         Andriod Studio 
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip blue darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i aria-hidden="true" class="icon icon--left devicon devicon-jquery-plain" style="padding-left: 8px;"></i>
+                                <span tabindex="0" class="chip light-blue  white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-react-original" ></i>
                                         React
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip blue darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i aria-hidden="true" class="icon icon--left devicon devicon-jquery-plain" style="padding-left: 8px;"></i>
+                                <span tabindex="0" class="chip light-green white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-mongodb-plain" ></i>
                                         MongoDB
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip blue darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i aria-hidden="true" class="icon icon--left devicon devicon-jquery-plain" style="padding-left: 8px;"></i>
-                                        Node / Express
+                                <span tabindex="0" class="chip lime-green white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-nodejs-plain" ></i>
+                                        Node/Express
                                     </span>
                                 </span>
                                 <div >
-                                    <h3  class="headline mb-0">QuickHealth</h3>
+                                    <h3  class="headline ">QuickHelp</h3>
                                     <div>A andriod application that help reduce first response time to emergencies by connecting skilled professional.</div>
                                 </div>
                             </div>
                             <div  class="card__actions">
-                                <button  type="button" class="btn btn--flat theme--dark primary--text">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
                                     <div class="btn__content">
                                         View Source
                                         <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
                                     </div>
                                 </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-md-3 col-sm-8 col-8 other">
-                        <div class="cards mx-auto card" style="height: 400px; width: 380px;">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                        <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
-                                <div class="card__media__background"></div>
+                                <img class="card_media_background" src="/img/medicare.png" ></img>
                             </div>
                             <div  class="card__title card__title--primary">
-                                <span  tabindex="0" class="chip blue-grey darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i  aria-hidden="true" class="icon icon--left fab fa-ethereum" style="padding-left: 8px;"></i>
+                                <span  tabindex="0" class="chip green white_text">
+                                    <span class="chip_content">
+                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
                                         Andriod Studio
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip blue darken-3 white--text">
-                                    <span class="chip__content">
-                                        <i aria-hidden="true" class="icon icon--left devicon devicon-jquery-plain" style="padding-left: 8px;"></i>
+                                <span tabindex="0" class="chip orange white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
                                         OCR
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip blue darken-3 white--text">
-                                        <span class="chip__content">
-                                            <i aria-hidden="true" class="icon icon--left devicon devicon-jquery-plain" style="padding-left: 8px;"></i>
-                                            Google Calender
-                                        </span>
+                                <span tabindex="0" class="chip blue white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
+                                        Google Calender
                                     </span>
+                                </span>
+                                <span tabindex="0" class="chip  white_text">
+                                    <span class="chip_content">
+                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                        Firebase
+                                    </span>
+                                </span>
                                 <div >
-                                    <h3  class="headline mb-0">MediCare</h3>
-                                    <div>A andriod application that helps individuals never forget about taking their medication.</div>
+                                    <h3  class="headline ">MediCare</h3>
+                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
                                 </div>
                             </div>
                             <div  class="card__actions">
-                                <button  type="button" class="btn btn--flat theme--dark primary--text">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
                                     <div class="btn__content">
                                         View Source
                                         <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
                                     </div>
                                 </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
                             </div>
                         </div>
                     </div>
-                
 
-                    
-    
-                       
-                        
-                    
-                           
-
-                    <!-- <div class="portfolio-item joomla other col-8 col-sm-4 col-md-3 isotope-item" >
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="Residential/c2.jpg" style="width:300px;height:auto;" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3 style="font-size:20px;"><a href="#">Beautiful Chandelier</a></h3>
-                                    <a class="preview" href="Residential/c2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                            <div class="cards mx-auto card" >
+                                <div  class="card__media" style="height: 200px;">
+                                    <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                                </div>
+                                <div  class="card__title card__title--primary">
+                                    <span  tabindex="0" class="chip green white_text">
+                                        <span class="chip_content">
+                                            <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                            Andriod Studio 
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip light-blue  white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left devicon devicon-react-original" ></i>
+                                            React
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip light-green white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left devicon devicon-mongodb-plain" ></i>
+                                            MongoDB
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip lime-green white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left devicon devicon-nodejs-plain" ></i>
+                                            Node/Express
+                                        </span>
+                                    </span>
+                                    <div >
+                                        <h3  class="headline ">Naman Electric Website</h3>
+                                        <div>A andriod application that help reduce first response time to emergencies by connecting skilled professional.</div>
+                                    </div>
+                                </div>
+                                <div  class="card__actions">
+                                    <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                        <div class="btn__content">
+                                            View Source
+                                            <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                        </div>
+                                    </button>
+                                    <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                        <div class="btn__content">
+                                            <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                            <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
-                        </div>          
-                    </div> -->
+                        </div>
+                        <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                            <div class="cards mx-auto card" >
+                                <div  class="card__media" style="height: 200px;">
+                                    <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                                </div>
+                                <div  class="card__title card__title--primary">
+                                    <span  tabindex="0" class="chip green white_text">
+                                        <span class="chip_content">
+                                            <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                            Andriod Studio
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip orange white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                            OCR
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip blue white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
+                                            Google Calender
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip  white_text">
+                                        <span class="chip_content">
+                                            <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                            Firebase
+                                        </span>
+                                    </span>
+                                    <div >
+                                        <h3  class="headline ">2D FortNite</h3>
+                                        <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                    </div>
+                                </div>
+                                <div  class="card__actions">
+                                    <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                        <div class="btn__content">
+                                            View Source
+                                            <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                        </div>
+                                    </button>
+                                    <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                        <div class="btn__content">
+                                            <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                            <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                            <div class="cards mx-auto card" >
+                                <div  class="card__media" style="height: 200px;">
+                                    <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                                </div>
+                                <div  class="card__title card__title--primary">
+                                    <span  tabindex="0" class="chip green white_text">
+                                        <span class="chip_content">
+                                            <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                            Andriod Studio
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip orange white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                            OCR
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip blue white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
+                                            Google Calender
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip  white_text">
+                                        <span class="chip_content">
+                                            <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                            Firebase
+                                        </span>
+                                    </span>
+                                    <div >
+                                        <h3  class="headline ">Moneris Solution PAYD APP</h3>
+                                        <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                    </div>
+                                </div>
+                                <div  class="card__actions">
+                                    <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                        <div class="btn__content">
+                                            View Source
+                                            <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                        </div>
+                                    </button>
+                                    <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                        <div class="btn__content">
+                                            <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                            <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+            
                 </div>
             </div>
         </section>
+        <br/>
+
+
+        <section class="section h-100" >
+           
+            <div class="container h-25">
+                <div class="row justify-content-center align-items-center text-center h-25">
+                    <div class="col-md-offset-3 col-offset-3 mx-auto " style="padding:10px;" >
+                        <h1 class="title-1"> Experiences </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container h-75">
+                <div class="row justify-content-center align-items-center text-center h-25">
+                    
+                </div>
+            </div>
+
+        </section>
+
 
 
 

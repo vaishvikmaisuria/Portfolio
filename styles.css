@@ -139,3 +139,184 @@ body {
 .flex {
   padding:4px;
 }
+
+.card_media_background{
+  height: 190px;
+  width: 250px;
+}
+
+
+/* card size */
+
+.card {
+  height: 440px; 
+  width: 380px;
+}
+
+/* Chip Design */
+
+.chip {
+  background: #e0e0e0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  font-size: 13px;
+  margin: 2px;
+  outline: none;
+  position: relative;
+  -webkit-transition: .3s cubic-bezier(.25,.8,.5,1);
+  transition: .3s cubic-bezier(.25,.8,.5,1);
+  padding-right: 5px;
+
+}
+
+.chip_content {
+  border-radius: 28px;
+  cursor: default;
+  height: 32px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 12px;
+  white-space: nowrap;
+  z-index: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.white_text {
+  color: #fff !important;
+}
+
+.icon {
+  width:25px;
+  height:15px;
+  padding-left: 8px;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  font-size: 20px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1;
+  -webkit-transition: .3s cubic-bezier(.25,.8,.5,1);
+  transition: .3s cubic-bezier(.25,.8,.5,1);
+  vertical-align: middle;
+
+}
+
+.headline {
+  font-size: 24px!important;
+  font-weight: 400;
+  line-height: 32px!important;
+  letter-spacing: normal!important;
+  margin-bottom: 0!important;
+}
+
+.card__actions {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 4px;
+  display: flex;
+}
+
+.btn__content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: inherit;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 16px;
+  -webkit-transition: .3s cubic-bezier(.25,.8,.5,1);
+  transition: .3s cubic-bezier(.25,.8,.5,1);
+  white-space: nowrap;
+  width: inherit;
+}
+
+.hearticon {
+ margin-top:3px;
+}
+
+.likesText {
+  color:#1976d2 !important;
+  padding-left: 10px;
+  margin-top:3px;
+}
+
+.leftPush {
+  padding-left:10px;
+}
+
+/* Colours */
+
+.dark-blue-1 {
+  background-color: #37474f!important;
+  border-color: #37474f!important;
+}
+
+.blue {
+  background-color: #1565c0!important;
+  border-color: #1565c0!important;
+}
+
+.orange {
+  background-color: #f4511e!important;
+  border-color: #f4511e!important;
+}
+
+.light-orange {
+  background-color: #ff9800!important;
+  border-color: #ff9800!important;
+}
+
+
+.green {
+  background-color: #4caf50!important;
+  border-color: #4caf50!important;
+}
+
+.light-green {
+  background-color: #43a047!important;
+  border-color: #43a047!important;
+}
+
+.lime-green {
+  background-color: #64dd17!important;
+  border-color: #64dd17!important;
+}
+
+.light-blue {
+  background-color: #61dafb !important;
+  border-color: #61dafb !important;
+}
+
