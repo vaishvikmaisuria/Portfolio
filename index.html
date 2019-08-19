@@ -27,7 +27,11 @@
                     <img src="/img/logo.png" width="50" height="50" class="align-top" alt=""> 
                 </a>
                 <div >       
-                    <button class="btn my-2 my-sm-0 helloButton" href="/contact.html">Say Hello</button>
+                   
+                </div>
+                <div >
+                    <button class="btn my-2 my-sm-0 helloButton"  onclick="location.href='/notes.html'">Teaching Notes</button>
+                    <button class="btn my-2 my-sm-0 helloButton" onclick="location.href='/contact.html'">Say Hello</button>
                 </div>
             </div> 
         
@@ -123,6 +127,21 @@
                                 <li>Terminal/Vim</li>
                                 </ul>
                             </div>
+                            <div class="column col-md-3 col-sm-8 col-8 box justify-content-center ">
+                                    <!-- <figure class="image"><img class="is-skill-icon" src=""></figure> -->
+                                    <h1 class="title-1 text-center ">Designer</h1>
+                                    <p>I enjoy creating simple beautiful things, as designing is my creative outlet.</p>
+                                    <p class="list-title has-text-primary has-text-weight-normal">Languages I speak:</p>
+                                    <p>HTML, JavaScript, Node.js, CSS, Python, Go, Java, TypeScript </p>
+                                    <p class="list-title has-text-primary has-text-weight-normal">Things I work with:</p>
+                                    <ul>
+                                    <li>Adobe Illustrator</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>Sketch</li>
+                                    <li>Dribble</li>
+                                    <li>Pen & Paper</li>
+                                    </ul>
+                            </div>
                             <div class="column col-md-3 col-sm-8 col-8 box justify-content-center "> 
                                 <!-- <figure class="image"><img class="is-skill-icon" src=""></figure> -->
                                 <h1 class="title-1 text-center">Hobbies and Dreams</h1>
@@ -165,8 +184,8 @@
 
             </div>
 
-            <div class="container h-75" style="margin-left:80px;">
-                <div class="row portfolio-items isotope h-70" >
+            <div class="container h-75" >
+                <div class="row portfolio-items justify-content-center align-items-center text-center isotope h-70" style="margin-left: -3%;">
                     <!-- <div class="portfolio-item joomla pot col-8 col-sm-4 col-md-3 isotope-item">
                         <div class="recent-work-wrap">
                             <img class="img-responsive" src="Residential/c1.jpg" style="width:300px;height:auto;" alt="">
@@ -329,168 +348,318 @@
                     </div>
 
                     <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
-                            <div class="cards mx-auto card" >
-                                <div  class="card__media" style="height: 200px;">
-                                    <img class="card_media_background" src="/img/Comingsoon.png" ></img>
-                                </div>
-                                <div  class="card__title card__title--primary">
-                                    <span  tabindex="0" class="chip green white_text">
-                                        <span class="chip_content">
-                                            <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
-                                            Andriod Studio 
-                                        </span>
+                        <div class="cards mx-auto card" >
+                            <div  class="card__media" style="height: 200px;">
+                                <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                            </div>
+                            <div  class="card__title card__title--primary">
+                                <span  tabindex="0" class="chip green white_text">
+                                    <span class="chip_content">
+                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                        Andriod Studio 
                                     </span>
-                                    <span tabindex="0" class="chip light-blue  white_text">
-                                        <span class="chip_content">
-                                            <i aria-hidden="true" class="icon icon--left devicon devicon-react-original" ></i>
-                                            React
-                                        </span>
+                                </span>
+                                <span tabindex="0" class="chip light-blue  white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-react-original" ></i>
+                                        React
                                     </span>
-                                    <span tabindex="0" class="chip light-green white_text">
-                                        <span class="chip_content">
-                                            <i aria-hidden="true" class="icon icon--left devicon devicon-mongodb-plain" ></i>
-                                            MongoDB
-                                        </span>
+                                </span>
+                                <span tabindex="0" class="chip light-green white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-mongodb-plain" ></i>
+                                        MongoDB
                                     </span>
-                                    <span tabindex="0" class="chip lime-green white_text">
-                                        <span class="chip_content">
-                                            <i aria-hidden="true" class="icon icon--left devicon devicon-nodejs-plain" ></i>
-                                            Node/Express
-                                        </span>
+                                </span>
+                                <span tabindex="0" class="chip lime-green white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-nodejs-plain" ></i>
+                                        Node/Express
                                     </span>
-                                    <div >
-                                        <h3  class="headline ">Naman Electric Website</h3>
-                                        <div>A andriod application that help reduce first response time to emergencies by connecting skilled professional.</div>
-                                    </div>
-                                </div>
-                                <div  class="card__actions">
-                                    <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
-                                        <div class="btn__content">
-                                            View Source
-                                            <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
-                                        </div>
-                                    </button>
-                                    <button  type="button" onclick="addLikes()" class="btn   likesText">
-                                        <div class="btn__content">
-                                            <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
-                                            <a id="singleTruthLikes" class="likesText">0 Likes</a>
-                                        </div>
-                                    </button>
+                                </span>
+                                <div >
+                                    <h3  class="headline ">Naman Electric Website</h3>
+                                    <div>A andriod application that help reduce first response time to emergencies by connecting skilled professional.</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
-                            <div class="cards mx-auto card" >
-                                <div  class="card__media" style="height: 200px;">
-                                    <img class="card_media_background" src="/img/Comingsoon.png" ></img>
-                                </div>
-                                <div  class="card__title card__title--primary">
-                                    <span  tabindex="0" class="chip green white_text">
-                                        <span class="chip_content">
-                                            <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
-                                            Andriod Studio
-                                        </span>
-                                    </span>
-                                    <span tabindex="0" class="chip orange white_text">
-                                        <span class="chip_content">
-                                            <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
-                                            OCR
-                                        </span>
-                                    </span>
-                                    <span tabindex="0" class="chip blue white_text">
-                                        <span class="chip_content">
-                                            <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
-                                            Google Calender
-                                        </span>
-                                    </span>
-                                    <span tabindex="0" class="chip  white_text">
-                                        <span class="chip_content">
-                                            <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
-                                            Firebase
-                                        </span>
-                                    </span>
-                                    <div >
-                                        <h3  class="headline ">2D FortNite</h3>
-                                        <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                            <div  class="card__actions">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                    <div class="btn__content">
+                                        View Source
+                                        <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
                                     </div>
-                                </div>
-                                <div  class="card__actions">
-                                    <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
-                                        <div class="btn__content">
-                                            View Source
-                                            <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
-                                        </div>
-                                    </button>
-                                    <button  type="button" onclick="addLikes()" class="btn   likesText">
-                                        <div class="btn__content">
-                                            <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
-                                            <a id="singleTruthLikes" class="likesText">0 Likes</a>
-                                        </div>
-                                    </button>
-                                </div>
+                                </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
                             </div>
                         </div>
-                        <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
-                            <div class="cards mx-auto card" >
-                                <div  class="card__media" style="height: 200px;">
-                                    <img class="card_media_background" src="/img/Comingsoon.png" ></img>
-                                </div>
-                                <div  class="card__title card__title--primary">
-                                    <span  tabindex="0" class="chip green white_text">
-                                        <span class="chip_content">
-                                            <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
-                                            Andriod Studio
-                                        </span>
+                    </div>
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                        <div class="cards mx-auto card" >
+                            <div  class="card__media" style="height: 200px;">
+                                <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                            </div>
+                            <div  class="card__title card__title--primary">
+                                <span  tabindex="0" class="chip green white_text">
+                                    <span class="chip_content">
+                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                        Andriod Studio
                                     </span>
-                                    <span tabindex="0" class="chip orange white_text">
-                                        <span class="chip_content">
-                                            <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
-                                            OCR
-                                        </span>
+                                </span>
+                                <span tabindex="0" class="chip orange white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                        OCR
                                     </span>
-                                    <span tabindex="0" class="chip blue white_text">
-                                        <span class="chip_content">
-                                            <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
-                                            Google Calender
-                                        </span>
+                                </span>
+                                <span tabindex="0" class="chip blue white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
+                                        Google Calender
                                     </span>
-                                    <span tabindex="0" class="chip  white_text">
-                                        <span class="chip_content">
-                                            <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
-                                            Firebase
-                                        </span>
+                                </span>
+                                <span tabindex="0" class="chip  white_text">
+                                    <span class="chip_content">
+                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                        Firebase
                                     </span>
-                                    <div >
-                                        <h3  class="headline ">Moneris Solution PAYD APP</h3>
-                                        <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
-                                    </div>
-                                </div>
-                                <div  class="card__actions">
-                                    <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
-                                        <div class="btn__content">
-                                            View Source
-                                            <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
-                                        </div>
-                                    </button>
-                                    <button  type="button" onclick="addLikes()" class="btn   likesText">
-                                        <div class="btn__content">
-                                            <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
-                                            <a id="singleTruthLikes" class="likesText">0 Likes</a>
-                                        </div>
-                                    </button>
+                                </span>
+                                <div >
+                                    <h3  class="headline ">2D FortNite</h3>
+                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
                                 </div>
                             </div>
+                            <div  class="card__actions">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                    <div class="btn__content">
+                                        View Source
+                                        <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                    </div>
+                                </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
+                            </div>
                         </div>
-
-                    
-            
+                    </div>
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                        <div class="cards mx-auto card" >
+                            <div  class="card__media" style="height: 200px;">
+                                <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                            </div>
+                            <div  class="card__title card__title--primary">
+                                <span  tabindex="0" class="chip green white_text">
+                                    <span class="chip_content">
+                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                        Andriod Studio
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip orange white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                        OCR
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip blue white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
+                                        Google Calender
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip  white_text">
+                                    <span class="chip_content">
+                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                        Firebase
+                                    </span>
+                                </span>
+                                <div >
+                                    <h3  class="headline ">Moneris Solution PAYD APP</h3>
+                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                </div>
+                            </div>
+                            <div  class="card__actions">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                    <div class="btn__content">
+                                        View Source
+                                        <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                    </div>
+                                </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                        <div class="cards mx-auto card" >
+                            <div  class="card__media" style="height: 200px;">
+                                <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                            </div>
+                            <div  class="card__title card__title--primary">
+                                <span  tabindex="0" class="chip green white_text">
+                                    <span class="chip_content">
+                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                        Andriod Studio
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip orange white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                        OCR
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip blue white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
+                                        Google Calender
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip  white_text">
+                                    <span class="chip_content">
+                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                        Firebase
+                                    </span>
+                                </span>
+                                <div >
+                                    <h3  class="headline ">GymLife</h3>
+                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                </div>
+                            </div>
+                            <div  class="card__actions">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                    <div class="btn__content">
+                                        View Source
+                                        <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                    </div>
+                                </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                        <div class="cards mx-auto card" >
+                            <div  class="card__media" style="height: 200px;">
+                                <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                            </div>
+                            <div  class="card__title card__title--primary">
+                                <span  tabindex="0" class="chip green white_text">
+                                    <span class="chip_content">
+                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                        Andriod Studio
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip orange white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                        OCR
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip blue white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
+                                        Google Calender
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip  white_text">
+                                    <span class="chip_content">
+                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                        Firebase
+                                    </span>
+                                </span>
+                                <div >
+                                    <h3  class="headline ">Connect</h3>
+                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                </div>
+                            </div>
+                            <div  class="card__actions">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                    <div class="btn__content">
+                                        View Source
+                                        <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                    </div>
+                                </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-8 other">
+                        <div class="cards mx-auto card" >
+                            <div  class="card__media" style="height: 200px;">
+                                <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                            </div>
+                            <div  class="card__title card__title--primary">
+                                <span  tabindex="0" class="chip green white_text">
+                                    <span class="chip_content">
+                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                        Andriod Studio
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip orange white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                        OCR
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip blue white_text">
+                                    <span class="chip_content">
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
+                                        Google Calender
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip  white_text">
+                                    <span class="chip_content">
+                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                        Firebase
+                                    </span>
+                                </span>
+                                <div >
+                                    <h3  class="headline ">Atmiya Sports Club</h3>
+                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                </div>
+                            </div>
+                            <div  class="card__actions">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                    <div class="btn__content">
+                                        View Source
+                                        <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                    </div>
+                                </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <br/>
+        
 
 
-        <section class="section h-100" >
+        <section class="section h-105" >
            
             <div class="container h-25">
                 <div class="row justify-content-center align-items-center text-center h-25">
@@ -501,12 +670,95 @@
             </div>
 
             <div class="container h-75">
-                <div class="row justify-content-center align-items-center text-center h-25">
-                    
+                   
+                <div id="experience-timeline">
+                    <div data-date="July 2015 – September 2015">
+                        <h3>Naman Electric</h3>
+                        <h4>Electrician Assistant</h4>
+                        <p>
+                            My duties included organization of tools and assisting electrician with correct tools during work. 
+                            <li>Able to Learn about electrical hardware and tools.</li>
+                            <li>Developed skills such as Hardworking, Time Managment, Organizationational, and Team Work </li>
+                        </p>
+                    </div>
+        
+                    <div data-date="July 2016 – September 2016">
+                        <h3>GoldenAtmiyata</h3>
+                        <h4>Founder</h4>
+                        <p>
+                            This was a non-profit company which I created with 3 other friends. We aimed to earn money so that we could donate it to charity. My roles included Advertising, Management of equipment, and Organization of team members. As a team of 9 we as a company were able to raise $3,000 in 2 mouths of summer break. Our company performed different task such as:
+                            
+                            <ol>
+                                <li>Fixing/Creating stone pathways</li>
+                                <li>Applying Driveway Sealer</li>
+                                <li>Mowing the lawns</li>
+                                <li>Removing weeds</li>
+                                <li>Washing Cars </li>
+                                <li>Other labour household jobs</li>
+                            </ol>
+        
+                            
+                        </p>
+                    </div>
+        
+                    <div data-date="April 2017 – Present">
+                        <h3>Naman Electric</h3>
+                        <h4>Computer Engineer/Electrician Assistant</h4>
+                        <p>
+                            <li>
+                                Created company Logo, Website, Invoices and Fire Alarm Tags.
+                            </li>
+                            <li>
+                                Working on a digitalizing company payment system.
+                            </li>
+                                <li>
+                                Working on a computerized system for Electrical inspection and Job Time Management/Organization.
+                            </li>
+                        </p>
+                    </div>
+        
+                    <div data-date="May 2018 – Present">
+                        <h3><a href="http://engsci.utoronto.ca/news/project-include-brings-the-joy-of-coding/">Project Include</a></h3>
+                        <h4>Intructor</h4>
+                        <p>
+                            Project Include is a group of students dedicated to promoting equality in the Digital Age, by sharing our knowledge of programming, computer literacy and robotics to enrich communities in need. I will be responsible for running the sessions and designing the curriculum for childeren ages ranging from 6 to 18. 
+                        </p>
+                    </div>
                 </div>
             </div>
 
         </section>
+
+        <section class="section is-primary h-80" >
+            <div class="container h-25">
+                <div class="row justify-content-center align-items-center text-center h-100">
+                    <div class="col-md-offset-3 col-offset-3 mx-auto " style="padding:10px;" >
+                        <h1 >Help me achieve new levels on my journey! I would like to achieve the best version of my self as a developer. If you are interested in collaborating or investing in my growth through new opportunities like freelance contract or job application. </h1>
+                        <h2 class="helpText">I'm always open to discussing product design, structure, and code. </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section call-to-action  has-text-centered">
+            <div class="container is-narrow">
+                <div class="box">
+                <div class="columns level">
+                    <div class="column level-item">
+                    <h1 class="title">Start a project</h1>
+                    </div>
+                    <div class="column level-item">
+                    <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
+                    </div>
+                    <div class="column level-item"><a class="button is-primary is-outlined is-rounded is-medium" href="/project-planner">Let's do this</a></div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
 
 
 
@@ -518,6 +770,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="experience.js"></script>
         <script src="typeWriter.js"></script>
     </body>
 </html>
