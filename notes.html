@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <!-- Bootstrap CSS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <!-- Personal CSS Styles -->
+        <link href="styles.css" rel="stylesheet">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Devicon -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+      
+        <!-- <script src="https://kit.fontawesome.com/5c6404d5e5.js"></script> -->
+        <title>My Porfile</title>
+
+
+    </head>
+
+    <body>
+        <section class="h-30">
+          
+            <div class="navbar is-planner navbar-light ">
+                <a class="navbar-header" href="#">
+                    <img src="/img/logo.png" width="50" height="50" class="align-top" alt=""> 
+                </a>
+                <div >       
+                   
+                </div>
+                <div >
+                    <button class="btn my-2 my-sm-0 buttonContact is-primary is-outlined is-rounded is-medium" onclick="location.href='/index.html'">Back</button>
+                </div>
+            </div> 
+
+            <div style="margin-top:2%">
+                <div class="row justify-content-center align-items-center text-center h-100">
+                    <div class="col-md-offset-3 mx-auto my-auto">
+                        <h1 class="title-2 is-spaced  is-size-2-tablet title-mobile">Enjoy the Free Notes</h1>
+                        <p>I am sorry for the inconvience. Notes coming soon!</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        <section class="h-70">
+            <div class="container h-75" >
+                <div class="row portfolio-items justify-content-center align-items-center text-center isotope h-70" >
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                        <div class="cards mx-auto card" >
+                            <div  class="card__title card__title--primary">
+                                <div>     
+                                    <h3  class="headline ">CSC108 Notes</h3>
+                                    <div style="padding-top:10px">Introduction to Computer Programming, Where these notes will help you be comfortable with procedural programming in Python.</div>
+                                </div>
+                            </div>
+                            <div  class="card__actions">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                    <div class="btn__content">
+                                        View Source
+                                        <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                    </div>
+                                </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Views</a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                        <div class="cards mx-auto card" >
+                            <div  class="card__title card__title--primary">
+                                <div>     
+                                    <h3  class="headline ">CSC411 Notes</h3>
+                                    <div style="padding-top:10px">CSC411H5(Fall) Machine Learning and Data Mining, These notes will be updated as the course progresses.</div>
+                                </div>
+                            </div>
+                            <div  class="card__actions">
+                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                    <div class="btn__content">
+                                        View Source
+                                        <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                    </div>
+                                </button>
+                                <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                    <div class="btn__content">
+                                        <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                        <a id="singleTruthLikes" class="likesText">0 Views</a>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="experience.js"></script>
+        <script src="typeWriter.js"></script>
+        <script src="popper.js"></script>
+    </body>
+</html>

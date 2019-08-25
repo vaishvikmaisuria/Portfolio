@@ -11,7 +11,8 @@ $('#experience-timeline').each(function() {
 
     // Add icons to each block
     $this.find('.vtimeline-point').each(function() {
-        $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+        console.log($this.find('.vtimeline-point'));
+        $(this).prepend('<div  class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
     });
 
     // Add dates to the timeline if exists
