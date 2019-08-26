@@ -610,6 +610,14 @@ form textarea {
 
 }
 
+.portfolio-filter > li a:hover,
+.portfolio-filter > li a.active{
+  color:#fff;
+  background: #007bff;
+  border: 1px solid #007bff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
 
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) { 

@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Devicon -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-      
-        <!-- <script src="https://kit.fontawesome.com/5c6404d5e5.js"></script> -->
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title>My Porfile</title>
 
 
@@ -174,11 +174,12 @@
                 </div>
                 <div class="row justify-content-center align-items-center text-center h-25">
                     <ul class="portfolio-filter text-center">
-                        <li><a class="btn btn-default active" href="#" data-filter="*">All Works</a></li>
-                        <li><a class="btn btn-default" href="#" data-filter=".pot">Web</a></li>
-                        <li><a class="btn btn-default" href="#" data-filter=".panel">Mobile</a></li>
-                        <li><a class="btn btn-default" href="#" data-filter=".COM">React</a></li>
-                        <li><a class="btn btn-default" href="#" data-filter=".other">Docker</a></li>
+                        <li><a class="btn btn-default active" href="#" data-filter="*">All Work</a></li>
+                        <li><a class="btn btn-default" href="#" data-filter=".web">Web</a></li>
+                        <li><a class="btn btn-default" href="#" data-filter=".mobile">Mobile</a></li>
+                        <li><a class="btn btn-default" href="#" data-filter=".react">React</a></li>
+                        <li><a class="btn btn-default" href="#" data-filter=".docker">Docker</a></li>
+                        <li><a class="btn btn-default" href="#" data-filter=".blockchain">Blockchain</a></li>
                     </ul>
                 </div>
 
@@ -198,7 +199,7 @@
                         </div>
                     </div> -->
 
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item blockchain web">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/insurance.png" ></img>
@@ -244,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item mobile">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/QuickHelp.png" ></img>
@@ -256,10 +257,10 @@
                                         Andriod Studio 
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip light-blue  white_text">
+                                <span tabindex="0" class="chip orange  white_text">
                                     <span class="chip_content">
                                         <i aria-hidden="true" class="icon icon--left devicon devicon-react-original" ></i>
-                                        React
+                                        Java
                                     </span>
                                 </span>
                                 <span tabindex="0" class="chip light-green white_text">
@@ -295,7 +296,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item mobile">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/medicare.png" ></img>
@@ -346,8 +347,54 @@
                             </div>
                         </div>
                     </div>
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item web react">
+                            <div class="cards mx-auto card" >
+                                <div  class="card__media" style="height: 200px;">
+                                    <img class="card_media_background" src="/img/Comingsoon.png" ></img>
+                                </div>
+                                <div  class="card__title card__title--primary">
+                                    <span  tabindex="0" class="chip green white_text">
+                                        <span class="chip_content">
+                                            <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
+                                            React
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip orange white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                            Chrome API
+                                        </span>
+                                    </span>
+                                    <span tabindex="0" class="chip orange white_text">
+                                        <span class="chip_content">
+                                            <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
+                                            Node/Express
+                                        </span>
+                                    </span>
+                                   
+                                    <div >
+                                        <h3  class="headline ">GoogleState</h3>
+                                        <div>A Google Chrome extension that helps individuals stay productive and helps block website for custom period of time.</div>
+                                    </div>
+                                </div>
+                                <div  class="card__actions">
+                                    <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                        <div class="btn__content">
+                                            View Source
+                                            <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
+                                        </div>
+                                    </button>
+                                    <button  type="button" onclick="addLikes()" class="btn   likesText">
+                                        <div class="btn__content">
+                                            <i id="bt" aria-hidden="true" class="hearticon fa fa-heart-o fa-2x "></i>
+                                            <a id="singleTruthLikes" class="likesText">0 Likes</a>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item web">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/Comingsoon.png" ></img>
@@ -398,7 +445,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item web react">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/Comingsoon.png" ></img>
@@ -406,35 +453,37 @@
                             <div  class="card__title card__title--primary">
                                 <span  tabindex="0" class="chip green white_text">
                                     <span class="chip_content">
-                                        <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
-                                        Andriod Studio
+                                        <img  aria-hidden="true" class="icon icon--left" src="img/SQLite.svg" ></img>
+                                        SQLite3
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip orange white_text">
+                               
+                                <span tabindex="0" class="chip light-blue  white_text">
                                     <span class="chip_content">
-                                        <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
-                                        OCR
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-react-original" ></i>
+                                        React
                                     </span>
                                 </span>
+                               
                                 <span tabindex="0" class="chip blue white_text">
                                     <span class="chip_content">
-                                        <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
-                                        Google Calender
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-jquery-original" ></i>
+                                        Jquery
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip  white_text">
+                                <span tabindex="0" class="chip lime-green white_text">
                                     <span class="chip_content">
-                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
-                                        Firebase
+                                        <i aria-hidden="true" class="icon icon--left devicon devicon-nodejs-plain" ></i>
+                                        Node/Sockets
                                     </span>
                                 </span>
                                 <div >
                                     <h3  class="headline ">2D FortNite</h3>
-                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                    <div> Mobile Massively Multiplayer Online Game that uses react to manage login and member managment. Also includes different AI enemies.</div>
                                 </div>
                             </div>
                             <div  class="card__actions">
-                                <button  type="button" onclick="location.href='https://devpost.com/software/single-truth'" class="btn   likesText">
+                                <button  type="button" onclick="location.href='https://github.com/Vaishvik-Maisuria/Fortnite'" class="btn likesText">
                                     <div class="btn__content">
                                         View Source
                                         <i id="bt" aria-hidden="true" class="icon icon--right material-icons"></i>
@@ -449,7 +498,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item mobile web">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/Comingsoon.png" ></img>
@@ -500,7 +549,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item react mobile web">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/Comingsoon.png" ></img>
@@ -509,30 +558,25 @@
                                 <span  tabindex="0" class="chip green white_text">
                                     <span class="chip_content">
                                         <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
-                                        Andriod Studio
+                                        React
                                     </span>
                                 </span>
                                 <span tabindex="0" class="chip orange white_text">
                                     <span class="chip_content">
                                         <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
-                                        OCR
+                                        TypeScript
                                     </span>
                                 </span>
                                 <span tabindex="0" class="chip blue white_text">
                                     <span class="chip_content">
                                         <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
-                                        Google Calender
+                                        MobX
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip  white_text">
-                                    <span class="chip_content">
-                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
-                                        Firebase
-                                    </span>
-                                </span>
+                               
                                 <div >
                                     <h3  class="headline ">GymLife</h3>
-                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                    <div> A cross platform application that helps users track daily workout. </div>
                                 </div>
                             </div>
                             <div  class="card__actions">
@@ -551,7 +595,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item blockchain docker web">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/Comingsoon.png" ></img>
@@ -560,30 +604,36 @@
                                 <span  tabindex="0" class="chip green white_text">
                                     <span class="chip_content">
                                         <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
-                                        Andriod Studio
+                                        React
                                     </span>
                                 </span>
                                 <span tabindex="0" class="chip orange white_text">
                                     <span class="chip_content">
                                         <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
-                                        OCR
+                                        Blockchain
                                     </span>
                                 </span>
                                 <span tabindex="0" class="chip blue white_text">
                                     <span class="chip_content">
                                         <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
-                                        Google Calender
+                                        Docker/ Kuberneets
                                     </span>
                                 </span>
                                 <span tabindex="0" class="chip  white_text">
                                     <span class="chip_content">
                                         <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
-                                        Firebase
+                                        Redis 
+                                    </span>
+                                </span>
+                                <span tabindex="0" class="chip  white_text">
+                                    <span class="chip_content">
+                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
+                                        MongoDB 
                                     </span>
                                 </span>
                                 <div >
                                     <h3  class="headline ">Connect</h3>
-                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                    <div> Application that helps individuals pay back friends and family when planing a trip or getting a car ride. </div>
                                 </div>
                             </div>
                             <div  class="card__actions">
@@ -602,7 +652,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other">
+                    <div class="flex mx-auto column col-lg-4 col-md-5 col-sm-8 col-12 other portfolio-item mobile react">
                         <div class="cards mx-auto card" >
                             <div  class="card__media" style="height: 200px;">
                                 <img class="card_media_background" src="/img/Comingsoon.png" ></img>
@@ -611,30 +661,13 @@
                                 <span  tabindex="0" class="chip green white_text">
                                     <span class="chip_content">
                                         <i  aria-hidden="true" class="icon icon--left devicon devicon-android-plain" ></i>
-                                        Andriod Studio
+                                        React Native
                                     </span>
                                 </span>
-                                <span tabindex="0" class="chip orange white_text">
-                                    <span class="chip_content">
-                                        <i aria-hidden="true" class="icon icon--left fa fa-eye" ></i>
-                                        OCR
-                                    </span>
-                                </span>
-                                <span tabindex="0" class="chip blue white_text">
-                                    <span class="chip_content">
-                                        <i aria-hidden="true" class="icon icon--left devicon devicon-google-plain" ></i>
-                                        Google Calender
-                                    </span>
-                                </span>
-                                <span tabindex="0" class="chip  white_text">
-                                    <span class="chip_content">
-                                        <img aria-hidden="true" class="icon icon--left"  src="/img/icons8-firebase.png" ></img>
-                                        Firebase
-                                    </span>
-                                </span>
+                               
                                 <div >
                                     <h3  class="headline ">Atmiya Sports Club</h3>
-                                    <div>A andriod application that helps individuals take a picture of their prescriptions or pill bottles, so they never forget about taking their medication. </div>
+                                    <div> News Pulication app that helps the sports organization spread news about new sports events.</div>
                                 </div>
                             </div>
                             <div  class="card__actions">
@@ -657,8 +690,6 @@
             </div>
         </section>
         
-
-
         <section class="section h-105" >
            
             <div class="container h-25">
@@ -760,13 +791,6 @@
 
 
 
-
-
-
-
-
-
-
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -775,5 +799,10 @@
         <script src="experience.js"></script>
         <script src="typeWriter.js"></script>
         <script src="popper.js"></script>
+        <!-- jQuery isotope  -->
+        <script src="isotope.pkgd.min.js"></script>	        
+        <script src="portfolio.js"></script>
+     
+      
     </body>
 </html>
