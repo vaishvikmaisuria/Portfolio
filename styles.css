@@ -619,6 +619,16 @@ form textarea {
   -webkit-box-shadow: none;
 }
 
+.btn__content:hover {
+  color:#fff;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: #007bff;
+  padding:5px;
+}
+
+
+
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) { 
   
