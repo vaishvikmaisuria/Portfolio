@@ -632,6 +632,9 @@ form textarea {
  /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) { 
   
+  .space{
+    padding-top:20px;
+  }
 
   .title-mobile {
     font-size: 2rem;
