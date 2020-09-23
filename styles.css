@@ -28,7 +28,7 @@ body {
 }
 
 .subText {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .section.skills {
@@ -690,7 +690,16 @@ form textarea {
     top: 100%;
     left: 33px;
   }
-  
+    
+  .mainText {
+    font-size: 6vw;
+    /* padding-left: 20px;
+    padding-right:20px */
+  }
+    
+  .subText {
+    font-size: 4vw;
+  }
 
 }
 
