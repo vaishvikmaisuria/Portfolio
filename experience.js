@@ -5,7 +5,11 @@ $('#experience-timeline').each(function() {
     $userContent = $this.children('div'); // user content
 
     // Create each timeline block
-    $userContent.each(function() {
+    $userContent.each(function( index, value) {
+        console.log(typeof(value))
+        if ($(this).hasClass('.experience-old')){
+            console.log("Fuck");
+        }
         $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
     });
 
@@ -24,3 +28,5 @@ $('#experience-timeline').each(function() {
     });
 
 });
+
+

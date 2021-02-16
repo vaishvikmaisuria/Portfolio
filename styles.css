@@ -15,7 +15,8 @@ body {
 
 
 .mainText {
-    font-size: 4vw;
+    /* font-size: 4vw; */
+    font-size: 2.5rem;
     /* padding-left: 20px;
     padding-right:20px */
 }
@@ -28,7 +29,8 @@ body {
 }
 
 .subText {
-  font-size: 2vw;
+  font-size: 1.75rem;
+  /* font-size: 2vw; */
 }
 
 .section.skills {
@@ -54,6 +56,13 @@ body {
   color: #293347;
 }
 
+.title-4 {
+  font-size: 1.5rem !important;
+  margin-bottom: 1.5rem;
+  font-family: "eurostile",sans-serif;
+  font-weight: 800;
+  color: #fff;
+}
 
 .portfolio-filter {
   list-style: none outside none;
