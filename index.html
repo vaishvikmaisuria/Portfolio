@@ -19,26 +19,48 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
         <title>My Portfolio</title>
-
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
 
     </head>
 
     <body>
         <section style="height: 100vh">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="color: #007bff;">
+                
+                    <a class="navbar-header" href="#">
+                        <img src="/img/logo.png" width="50" height="50" class="align-top" alt=""> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
               
-            <div class="navbar navbar-light ">
-                <a class="navbar-header" href="#">
-                    <img src="/img/logo.png" width="50" height="50" class="align-top" alt=""> 
-                </a>
-               <br>
-                <div >
-                    <button class="btn my-2 my-sm-0 buttonContact is-primary is-outlined is-rounded is-medium" onclick="location.href='#project'">Projects</button>
-                    <button class="btn my-2 my-sm-0 buttonContact is-primary is-outlined is-rounded is-medium" onclick="location.href='#aboutMe'">About me</button>
-                    <button class="btn my-2 my-sm-0 buttonContact is-primary is-outlined is-rounded is-medium" onclick="location.href='#experience'">Experience</button>
-                    <button class="btn my-2 my-sm-0 buttonContact is-primary is-outlined is-rounded is-medium" onclick="location.href='/contact.html'">Say Hello</button>
-                </div>
-            </div> 
-        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: #007bff;">
+                        <ul class="navbar-nav mr-auto" style="color: #007bff;position: absolute;right: 20px;">
+                            <li class="btn my-2 my-sm-0 buttonContact is-primary is-outlined is-rounded is-medium">
+                                <a class="nav-link" style="color: #007bff;"href="#">Projects</a>
+                            </li>
+                            <li class="btn my-2 my-sm-0 buttonContact is-primary is-outlined is-rounded is-medium">
+                                <a class="nav-link" style="color: #007bff;" href="#">About me</a>
+                            </li>
+                            <li class="btn my-2 my-sm-0 buttonContact is-primary is-outlined is-rounded is-medium">
+                                <a class="nav-link" style="color: #007bff;" href="#">Experience</a>
+                            </li>
+                        </ul>    
+                    </div>
+                
+              </nav>
+           
+            <br>
             <div style="margin-top:25vh">
                 <div class="row justify-content-center align-items-center text-center h-100">
                     <div class="col-md-offset-3 mx-auto my-auto">
@@ -46,9 +68,7 @@
                     </div>
                 </div>
             </div>
-            <br>
-     
- 
+              
             <div class="row justify-content-center align-items-center text-center" style="margin-top:10px;">
                 <div class="col-md-2 col-sm-2 col-4 ">
                     <div data-toggle="tooltip" data-placement="top" data-original-title="Connect with me on LinkedIn">
@@ -703,7 +723,7 @@
                             <p class="list-title has-text-primary has-text-weight-normal">Things I love to do and talk about:</p>
                             <ul>
                             <li>Basketball </li>
-                            <li>Learning about Investment(Stocks/Crypto)</li>
+                            <li>Learning Investment</li>
                             <li>Board Games</li>
                             <li>Teaching</li>
                             <li>Running</li>
